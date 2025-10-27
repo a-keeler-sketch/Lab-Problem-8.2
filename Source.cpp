@@ -9,43 +9,11 @@
 #include <cstdlib>
 #include <ctime>
 using namespace std;
-//prototype
-
-int countWords(string str);
-
-//global variable
-
-string input = "string string string"; // get correct word count for however many spaces
 
 int main(void) {
 
-    //DELETE EVERYTHING BEFORE FIRST COMMIT
-    //DELETE THIS FOR THE GITHUB COMMIT, YOU WILL NEED IT LATER THO TO GET USER DATA
-    /*while (true) {
-     cout << "Enter a string or Q to quit: ";
-     getline(cin, input);
-     if (input == "Q") break;*/
    
-
-        cout << "Word Count: " << countWords(input) << endl;
-    
-       
     return 0;
 
 }
 
-int countWords(string str) {
-    str.length();
-    int count = 0;
-    for (int i = 0; i < str.length(); i++) {
-
-        if (input[i] == ' ') {
-            count++;
-        }
-        
-    }
-    count += 1;
-
-    return count;
-    
-}
