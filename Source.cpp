@@ -9,11 +9,37 @@
 #include <cstdlib>
 #include <ctime>
 using namespace std;
+//prototype
 
+int countWords(string str);
+
+//global variable
+
+string input = "string string string"; 
 int main(void) {
 
+    
    
+
+        cout << "Word Count: " << countWords(input) << endl;
+    
+       
     return 0;
 
 }
 
+int countWords(string str) {
+    str.length();
+    int count = 0;
+    for (int i = 0; i < str.length(); i++) {
+
+        if (input[i] == ' ' && input[i+1] != ' ') {
+            count++;
+        }
+        
+    }
+    count += 1;
+
+    return count;
+    
+}
